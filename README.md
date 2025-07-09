@@ -1,27 +1,56 @@
-# TestTaskToDoMultiBit
+# Frontend "Список задач" 🚀
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 18.2.20.
+**Мини-приложение "Список задач" (ToDo)**  
+Описание задания:  
+Создай простое Angular-приложение, в котором пользователь может:
+1. Просматривать список задач
+2. Добавлять новую задачу
+3. Удалять задачу
+4. Просматривать детали задачи на отдельной странице
+# 🛠️ Cтек
+    angular/core: 18.2.20
+    angular/material 18.2.14
+    bootstrap: 5.3.3
+    typescript: 5.5.2
+    CSS 3
+    HTML 5
+    Intellij IDEA v.2024.3
 
-## Development server
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
 
-## Code scaffolding
+# 💡 Инструкция по запуску приложения
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+Для корректной работы и запуска данного Angular 18 приложения выполните следующие шаги:
 
-## Build
+## 1. Требования к окружению
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+- **IDE с поддержкой локального сервера**  
+  Рекомендуется использовать современную IDE, например **IntelliJ IDEA**, которая поддерживает запуск локального сервера и интеграцию с Node.js.
+- **Node.js**  
+  Необходима установленная версия Node.js одной из версий:
+  - ^18.19.1
+  - ^20.11.1
+  - ^22.0.0
 
-## Running unit tests
+## 2. Установка зависимостей
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+1. Откройте проект в вашей IDE.
+2. Откройте терминал в корневой директории приложения.
+3. Выполните команду для установки зависимостей:
+   ```bash
+   npm ci
+## 3. Запуск приложения
+Для запуска приложения используйте вашу IDE.
+В IntelliJ IDEA используйте сочетание клавиш Shift + F10 для запуска локального сервера. Либо выполните команду в теринале с помщью Angular CLI:
+   ```bash
+    ng serve
+   ```
+## 4. Примечание
+После запуска приложение будет доступно по адресу:
+http://localhost:4200.
 
-## Running end-to-end tests
+# 🔗 Ссылки
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+[![devSite](https://img.shields.io/badge/Site-mattheweb.ru-3C517C?logo=monster)](https://mattheweb.ru/git-badges-readme-testTask-toDo-MultiBit)  
+[![tg](https://img.shields.io/badge/Telegram-@rudalsmolyusr-27a7e7?logo=telegram)](https://t.me/rudalsmolyusr)  
+[![gitHub](https://img.shields.io/badge/GitHub-Solrud-blue?logo=github)](https://github.com/Solrud)

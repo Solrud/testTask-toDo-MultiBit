@@ -1,1 +1,8 @@
-<p>control-buttons works!</p>
+<div class="d-flex gap-3">
+  <button mat-raised-button color="primaty"
+          (click)="onClickAdd()">Добавить задачу</button>
+  <button mat-raised-button color="accent" [disabled]="!isSelectedElem()"
+          (click)="onClickView()">Подробнее о задаче</button>
+  <button mat-raised-button color="warn" [disabled]="!isSelectedElem()"
+          (click)="onClickDelete()">Удалить задачу</button>
+</div>

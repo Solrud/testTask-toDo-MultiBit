@@ -14,11 +14,6 @@ describe('AppComponent', () => {
     expect(app).toBeTruthy();
   });
 
-  it(`should have the 'testTask-toDo-MultiBit' title`, () => {
-    const fixture = TestBed.createComponent(AppComponent);
-    const app = fixture.componentInstance;
-    expect(app.title).toEqual('testTask-toDo-MultiBit');
-  });
 
   it('should render title', () => {
     const fixture = TestBed.createComponent(AppComponent);

@@ -1,1 +1,15 @@
-<p>main works!</p>
+<div class="main-container">
+  <app-control-buttons class="m-2"
+                       [isSelectedElem]="!!selectedTask()"
+
+                       (add)="onAddTask()"
+                       (view)="onViewTask()"
+                       (delete)="onDeleteTask()">
+  </app-control-buttons>
+  <app-table [dataSourceList]="dataTaskList()"
+             [columnFieldList]="taskFieldList()"
+
+             (selectElem)="onClickSelectTask($event)"
+             (statusChange)="onChangeStatus($event)"></app-table>
+</div>
+

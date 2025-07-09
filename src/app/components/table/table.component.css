@@ -1,3 +1,10 @@
 table {
   width: 100%;
 }
+.selected-row {
+  background-color: #b0d2ee !important;
+}
+
+.status-success{
+  background-color: #bae8b4;
+}

@@ -1,1 +1,19 @@
-<p>task works!</p>
+<div class="main-container d-flex flex-column align-items-center">
+  @if (currentTask()){
+    <h3>ID: {{currentTask()?.id}}</h3>
+    <h3>Наименование задачи: {{currentTask()?.title}}</h3>
+    <h4>Описание: {{currentTask()?.description || 'Без описания'}}</h4>
+     @if (currentTask()?.status){
+      <h5 class="text-success">Задача выполнена!</h5>
+    } @else {
+  <h5 class="text-danger">Задача не выполнена!</h5>
+    }
+  } @else {
+  <h3>Задачи с таким ID не существует!</h3>
+  }
+
+  <button mat-stroked-button
+          [routerLink]="['/']">Вернуться на главную
+  </button>
+</div>
+

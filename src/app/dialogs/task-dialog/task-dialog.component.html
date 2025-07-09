@@ -1,0 +1,29 @@
+<h2 mat-dialog-title>Добавить новую задачу</h2>
+<mat-dialog-content>
+  <form [formGroup]="fgTask"
+        class="d-flex flex-column">
+    <mat-form-field class="example-full-width">
+      <mat-label>Введите заголовок</mat-label>
+      <input matInput
+             placeholder="Title"
+             formControlName="title"
+             [required]="!!fgTask.get('title')?.hasValidator(Validators.required)">
+    </mat-form-field>
+    <mat-form-field class="example-full-width">
+      <mat-label>Введите описание</mat-label>
+      <textarea type="text"
+                matInput placeholder="Description"
+                formControlName="description"
+                [required]="!!fgTask.get('description')?.hasValidator(Validators.required)"></textarea>
+    </mat-form-field>
+  </form>
+
+</mat-dialog-content>
+<mat-dialog-actions>
+  <button mat-button
+          mat-dialog-close
+          cdkFocusInitial>No</button>
+  <button mat-button
+          [disabled]="fgTask.invalid"
+          (click)="onClickCreate()">Ok</button>
+</mat-dialog-actions>
